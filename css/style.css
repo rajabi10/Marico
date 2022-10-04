@@ -74,44 +74,35 @@ h2 {
   outline: 0;
   border: 0;
   padding: 1.3rem 2.5rem;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   white-space: nowrap;
   margin: 1rem 0;
   font-size: 1.5rem;
-  font-family: "Vazir-Medium";
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .btn--primary {
-  background-color: var(--color-secondary-light);
+  background-color: var(--color-text-body);
   color: var(--color-primary);
-}
-
-.btn--primary__blue {
-  background-color: var(--color-primary);
-  color: var(--color-secondary-light);
-}
-
-.btn--primary__blue__dark {
-  background-color: var(--color-secondary-dark);
-  color: var(--color-secondary-light);
 }
 
 .btn--secondary {
-  background-color: var(--color-secondary-dark);
-  color: var(--color-primary);
-}
-
-.btn--secondary__white {
   background-color: transparent;
-  border: 2px solid var(--color-secondary-light);
+  border: 1.5px solid var(--color-secondary-light);
   color: var(--color-secondary-light);
 }
 
-.btn--secondary__blue {
+.btn--plan-primary {
   background-color: transparent;
-  border: 2px solid var(--color-secondary-dark);
-  color: var(--color-secondary-dark);
+  border: 3px solid var(--color-plan-button-stroke);
+  color: var(--color-text-body);
+}
+
+.btn--plan-highlight {
+  background-color: #ffff;
+  color: var(--color-plan-highlight);
 }
 
 .btn--block {
@@ -137,9 +128,3 @@ h2 {
   box-shadow: 2px 5px 10px -4px rgb(132, 132, 132);
 }
 
-@media screen and (min-width: 1024px) {
-  .icon-container {
-    width: 90px;
-    height: 90px;
-  }
-}
