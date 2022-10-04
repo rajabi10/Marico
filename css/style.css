@@ -1,0 +1,145 @@
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* background: linear-gradient(97.01deg, #53B9D9 -6.41%, rgba(20, 77, 101, 0) 110.43%); */
+
+/* root variables */
+:root {
+  /* Homepage */
+  --color-background: #000;
+  --color-primary: #306ef7;
+  --color-secondary-light: #707070;
+  --color-secondary-dark: #0e5d80;
+  --color-text-steps: #3d82f2;
+  --color-text-main: #326cf9;
+  --color-text-green: #0fc65c;
+  --color-text: #919191;
+  --color-text-body: #ffffff;
+  /* Pricing */
+  --color-plan-bg: #131313;
+  --color-plan-bg-stroke: #707070;
+  --color-plan-button-stroke: #4681e7;
+  --color-plan-highlight: #3c82f4;
+  --color-plan-highlight-button: #ffff;
+  --color-plan-text: #b4b1b1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-background);
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+/* R 400,semi 600,B 700,Ex 800 */
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-body);
+  font-size: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Button */
+.btn {
+  outline: 0;
+  border: 0;
+  padding: 1.3rem 2.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-family: "Vazir-Medium";
+}
+
+.btn--primary {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+}
+
+.btn--primary__blue {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-light);
+}
+
+.btn--primary__blue__dark {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-secondary-light);
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-primary);
+}
+
+.btn--secondary__white {
+  background-color: transparent;
+  border: 2px solid var(--color-secondary-light);
+  color: var(--color-secondary-light);
+}
+
+.btn--secondary__blue {
+  background-color: transparent;
+  border: 2px solid var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
+}
+
+.btn--block {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+/* icons */
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20%;
+  cursor: pointer;
+  box-shadow: 2px 5px 10px -4px rgb(132, 132, 132);
+}
+
+@media screen and (min-width: 1024px) {
+  .icon-container {
+    width: 90px;
+    height: 90px;
+  }
+}
