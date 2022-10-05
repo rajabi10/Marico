@@ -150,10 +150,24 @@ h2 {
 .hero .hero__text--gradient {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  background: #fe6783;
-  background: linear-gradient(to right, #fe6783 0%, #ffbf84 100%);
+  animation: flow 4s ease-in-out infinite;
+  background: linear-gradient(-50deg, #904e95, #b05fb6, #e73c7e, #ee7752);
+  background-size: 300%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .hero__middle {
@@ -229,4 +243,167 @@ h2 {
 
 .select-text p {
   color: var(--color-text);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero .text {
+    margin-bottom: 3rem;
+  }
+  .hero .hero__text {
+    font-size: 7rem;
+    padding: 3rem 0 0 0;
+  }
+  .hero .hero__text--gradient {
+    font-size: 7rem;
+  }
+  .hero__middle {
+    width: 500px;
+  }
+  .hero__middle h2 {
+    font-size: 2.8rem;
+  }
+  .hero__cta {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .hero__cta .btn--primary {
+    font-size: 1.8rem;
+    margin: 0 1rem 1rem 0;
+    padding: 1.2rem 4rem;
+  }
+  .hero__cta .btn--secondary {
+    padding: 1.4rem 6rem;
+    font-size: 1.4rem;
+  }
+  .select-control .c1 {
+    width: 25px;
+    height: 25px;
+  }
+  .select-control .c2 {
+    top: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 15px;
+    height: 15px;
+  }
+  .select-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 765px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .text {
+    margin-bottom: 2rem;
+  }
+  .hero .hero__text {
+    font-size: 6rem;
+    padding: 3rem 0 0 0;
+  }
+  .hero .hero__text--gradient {
+    font-size: 6rem;
+  }
+  .hero__middle {
+    width: 500px;
+  }
+  .hero__middle h2 {
+    font-size: 2.8rem;
+  }
+  .hero__cta {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .hero__cta .btn--primary {
+    font-size: 1.8rem;
+    margin: 0 1rem 1rem 0;
+    padding: 1.2rem 4rem;
+  }
+  .hero__cta .btn--secondary {
+    padding: 1.4rem 6rem;
+    font-size: 1.4rem;
+  }
+  .select-control .c1 {
+    width: 25px;
+    height: 25px;
+  }
+  .select-control .c2 {
+    top: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 15px;
+    height: 15px;
+  }
+  .select-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 450px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .text {
+    margin-bottom: 1rem;
+  }
+  .hero .hero__text {
+    font-size: 4rem;
+    padding: 3rem 0 0 0;
+  }
+  .hero .hero__text--gradient {
+    font-size: 4rem;
+  }
+  .hero__middle {
+    width: 500px;
+  }
+  .hero__middle h2 {
+    font-size: 2.8rem;
+  }
+  .hero__cta {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .hero__cta .btn--primary {
+    font-size: 1.8rem;
+    margin: 0 1rem 1rem 0;
+    padding: 1.2rem 4rem;
+  }
+  .hero__cta .btn--secondary {
+    padding: 1.4rem 6rem;
+    font-size: 1.4rem;
+  }
+  .select-control .c1 {
+    width: 25px;
+    height: 25px;
+  }
+  .select-control .c2 {
+    top: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    width: 15px;
+    height: 15px;
+  }
+  .select-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
 }
