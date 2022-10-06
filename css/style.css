@@ -207,6 +207,11 @@ p {
   font-size: 1.4rem;
 }
 
+.hero__cta .btn--secondary:hover {
+  border: 2px solid var(--color-primary);
+  color: var(--color-text-body);
+}
+
 /* check button */
 .select-type {
   display: flex;
@@ -418,12 +423,12 @@ p {
 .feature {
   text-align: center;
   padding: 0 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .feature h1 {
   font-size: 2rem;
-  margin: 2rem 0 3rem 0;
+  margin: 3rem 0 2.5rem 0;
 }
 
 .feature--item {
@@ -455,10 +460,11 @@ p {
   .feature {
     text-align: center;
     padding: 0 2rem;
+    margin-bottom: 6rem;
   }
   .feature h1 {
     font-size: 4rem;
-    margin: 6rem 0 2rem 0;
+    margin: 4rem 0 2rem 0;
   }
   .feature--item {
     margin-bottom: 0;
@@ -484,6 +490,7 @@ p {
   .feature {
     text-align: center;
     padding: 0 2rem;
+    margin-bottom: 4rem;
   }
   .feature h1 {
     font-size: 4rem;
@@ -512,8 +519,8 @@ p {
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
   .feature h1 {
-    font-size: 3rem;
-    margin: 4rem 0 4rem 0;
+    font-size: 2.5rem;
+    margin: 3rem 0 1.5rem 0;
   }
   .feature--item {
     margin-bottom: 2rem;
@@ -527,5 +534,95 @@ p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 2rem;
+  }
+}
+
+/* steps */
+.steps {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.step h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  width: 250px;
+  text-align: justify;
+  text-align-last: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.step .btn--secondary{
+  padding: 1.1rem 2.5rem;
+  font-size: 1.2rem;
+}
+
+.step .btn--secondary:hover {
+  border: 2px solid var(--color-primary);
+  color: var(--color-text-body);
+}
+
+@media screen and (min-width: 1024px) {
+  .steps {
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .step h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  .step h1 {
+    font-stretch: expanded;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .step p {
+    width: 650px;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .step .btn--secondary{
+    padding: 1.1rem 3.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+  .step p {
+    width: 600px;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px){
+  .step p {
+    width: 450px;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 1.5rem;
   }
 }
