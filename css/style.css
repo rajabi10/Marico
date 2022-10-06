@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* background: linear-gradient(97.01deg, #53B9D9 -6.41%, rgba(20, 77, 101, 0) 110.43%); */
@@ -429,6 +429,19 @@ p {
 .feature h1 {
   font-size: 2rem;
   margin: 3rem 0 2.5rem 0;
+  animation: focus-in 2s ease-out 0s 1 normal none;
+}
+
+@keyframes focus-in {
+  0% {
+    letter-spacing: 0.01em;
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .feature--item {
@@ -562,6 +575,19 @@ p {
   font-weight: 600;
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  animation: focus-in-contract 3.5s ease-out 0s 1 normal none;
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 0.01em;
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .step p {
@@ -572,7 +598,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.step .btn--secondary{
+.step .btn--secondary {
   padding: 1.1rem 2.5rem;
   font-size: 1.2rem;
 }
@@ -603,13 +629,13 @@ p {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  .step .btn--secondary{
+  .step .btn--secondary {
     padding: 1.1rem 3.5rem;
     font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px){
+@media screen and (max-width: 1023px) and (min-width: 768px) {
   .step p {
     width: 600px;
     text-align: justify;
@@ -618,11 +644,238 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 600px){
+@media screen and (max-width: 800px) and (min-width: 600px) {
   .step p {
     width: 450px;
     text-align: justify;
     text-align-last: center;
     font-size: 1.5rem;
+  }
+  step h1 {
+    letter-spacing: 0.5rem;
+  }
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.content--wraper {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.content__image {
+  margin-bottom: 2rem;
+}
+
+.content__image img {
+  width: 200px;
+  height: 200px;
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 0px -1px 39px 3px rgba(107, 103, 107, 0.35);
+  -moz-box-shadow: 0px -1px 39px 3px rgba(107, 103, 107, 0.35);
+  box-shadow: 0px -1px 39px 3px rgba(107, 103, 107, 0.35);
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.content__detail h2 {
+  font-size: 1.3rem;
+}
+
+.content__detail span {
+  color: var(--color-primary);
+}
+
+.content__detail--order {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  color: var(--color-text);
+  margin: 1rem 0 1rem 0;
+}
+
+.content__detail--order p {
+  font-size: 0.8rem;
+}
+
+.content__detail--order span {
+  color: #000;
+}
+
+.content__detail--order .c1 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: rgba(45, 45, 45, 1);
+}
+
+.content__detail--order .c2::after {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  content: "1";
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.content__detail--order .c3::after {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  content: "2";
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.content__cta {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.content__cta .btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-body);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.content__cta .btn--secondary {
+  padding: 1.1rem 3.5rem;
+  border: 1.5px solid var(--color-secondary-light);
+  font-size: 1.4rem;
+}
+
+.content__cta .btn--secondary:hover {
+  border: 2px solid var(--color-primary);
+  color: var(--color-text-body);
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 8rem 0 8rem 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .content__image img {
+    width: 520px;
+    height: 491px;
+  }
+  .content__detail {
+    margin-bottom: 2rem;
+  }
+  .content__detail h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+  }
+  .content__detail h1 {
+    font-size: 6rem;
+  }
+  .content__detail--order {
+    margin-left: 0.1rem;
+  }
+  .content__detail--order p {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .content__cta {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .content__cta .btn--primary {
+    font-size: 1.8rem;
+    margin: 0 1rem 1rem 0;
+    padding: 1.2rem 4rem;
+  }
+  .content__cta .btn--secondary {
+    padding: 1.4rem 6rem;
+    font-size: 1.4rem;
+  }
+  .content__detail--order .c1 {
+    width: 30px;
+  height: 30px;
+  }
+  .content__detail--order .c2::after {
+    font-size: 1.5rem;
+    top: 15%;
+  }
+  .content__detail--order .c3::after {
+    font-size: 1.5rem;
+    top: 15%;
   }
 }
