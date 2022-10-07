@@ -554,6 +554,7 @@ p {
 .steps {
   text-align: center;
   padding: 0 2rem;
+  margin-bottom: 1rem;
 }
 
 .step {
@@ -824,7 +825,7 @@ p {
   .content {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 8rem 0 8rem 0;
+    margin: 6rem 0 6rem 0;
     align-items: flex-start;
     text-align: left;
   }
@@ -948,7 +949,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4rem 0 4rem 0;
   padding: 0 2rem;
 }
 
@@ -956,6 +956,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #0d0d0d;
+  border-radius: 5px;
   height: 250px;
   width: 100%;
   margin-bottom: 2rem;
@@ -988,9 +989,17 @@ p {
 }
 
 .content-right {
+  display: flex;
+  flex-direction: column;
   background-color: #0d0d0d;
+  border-radius: 5px;
   height: 250px;
   width: 100%;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.content--right__text {
   padding: 1rem 1rem;
 }
 
@@ -998,9 +1007,10 @@ p {
   color: var(--color-text);
 }
 
-.content-right .-content-icon {
+.content-icon {
   display: flex;
   justify-content: flex-end;
+  margin-right: 5%;
 }
 
 .content-right .icon-container {
@@ -1008,4 +1018,74 @@ p {
   height: 50px;
   color: var(--color-text-green);
   margin-left: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .middle-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
+  .content--left,
+  .content-right {
+    width: 754px;
+    height: 350px;
+    padding: 1rem 0 1rem 0;
+  }
+  .content--left img {
+    width: 314px;
+    height: 170px;
+  }
+  .content--left__text h1 {
+    font-size: 4rem;
+  }
+  .content--right__text h1 {
+    font-size: 3.5rem;
+  }
+  .content-right .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width:1023px)  and (min-width:768px){
+  .middle-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
+  .content--left,
+  .content-right {
+    width: 754px;
+    height: 340px;
+    padding: 1rem 0 1rem 0;
+  }
+  .content--left img {
+    width: 330px;
+    height: 190px;
+  }
+  .content--left__text h1 {
+    font-size: 3.5rem;
+  }
+  .content--right__text h1 {
+    font-size: 3rem;
+  }
+  .content-right .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px)  {
+  .middle-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
 }
