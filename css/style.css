@@ -208,7 +208,7 @@ p {
 }
 
 .hero__cta .btn--secondary:hover {
-  border: 2px solid var(--color-primary);
+  border: 1px solid var(--color-primary);
   color: var(--color-text-body);
 }
 
@@ -825,7 +825,7 @@ p {
   .content {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 6rem 0 6rem 0;
+    margin: 8rem 0 8rem 0;
     align-items: flex-start;
     text-align: left;
   }
@@ -885,7 +885,7 @@ p {
   .content {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 8rem 0 8rem 0;
+    margin: 6rem 0 6rem 0;
     align-items: flex-start;
     text-align: left;
   }
@@ -1050,7 +1050,7 @@ p {
   }
 }
 
-@media screen and (max-width:1023px)  and (min-width:768px){
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .middle-content {
     flex-direction: row;
     justify-content: space-between;
@@ -1080,12 +1080,184 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 600px)  {
+@media screen and (max-width: 800px) and (min-width: 600px) {
   .middle-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6rem;
     margin-top: 6rem;
+  }
+}
+
+/* Expert */
+.content-Expert {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.content-Expert h1 {
+  margin-bottom: 1.5rem;
+  animation: focus 2s ease-out 0s 1 normal none;
+}
+
+@keyframes focus {
+  0% {
+    letter-spacing: 0.01em;
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.content-Expert--img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .content-Expert h1 {
+    padding: 0 2rem;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    animation: focus 2s ease-out 0s 1 normal none;
+  }
+
+  @keyframes focus {
+    0% {
+      letter-spacing: 0.5em;
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .Expert--img img {
+    width: 100%;
+    animation: none;
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .content-Expert h1 {
+    padding: 0 2rem;
+    font-size: 4rem;
+    animation: focus 2s ease-out 0s 1 normal none;
+  }
+
+  @keyframes focus {
+    0% {
+      letter-spacing: 0.2em;
+      filter: blur(10px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  .Expert--img img {
+    width: 100%;
+    animation: none;
+    transition: none;
+  }
+}
+
+/* Audeince */
+.Audience {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 2rem 0 2rem 0;
+}
+
+.Audience p {
+  text-align: center;
+  color: var(--color-text-body);
+  position: absolute;
+  top: 28%;
+}
+.Audience .Audience--img img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .Audience {
+    position: relative;
+    text-align: center;
+    margin: 8rem 0 8rem 0;
+  }
+  .Audience p {
+    width: 100%;
+    top: 28%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 5rem;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .Audience {
+    position: relative;
+    text-align: center;
+    margin: 6rem 0 6rem 0;
+  }
+  .Audience p {
+    width: 100%;
+    top: 25%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4rem;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .Audience {
+    position: relative;
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+  }
+  .Audience p {
+    width: 100%;
+    top: 25%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 3rem;
+    padding: 0 2rem;
+  }
+}
+
+/* Get start */
+.get-start {
+  text-align: center;
+}
+
+.get-start__text {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .get-start img {
+    width: 90px;
+    height: 90px;
+  }
+  .get-start__text{
+    margin-bottom: 2rem;
+  }
+  .get-start__text h1 {
+    font-size: 6rem;
+  }
+  .get-start__text p {
+    font-size: 2rem;
+  }
+  .get-start .select-text{
+    font-size: 2rem;
   }
 }
