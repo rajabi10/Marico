@@ -45,7 +45,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--color-text-body);
   font-size: 700;
 }
@@ -1362,7 +1363,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1023px) and (min-width:768px) {
+@media screen and (max-width: 1023px) and (min-width: 768px) {
   .footer {
     padding: 0 2rem;
     display: flex;
@@ -1381,3 +1382,140 @@ p {
     font-size: 1.5rem;
   }
 }
+
+/* ---------------------------ABOUT PAGE----------------------------------- */
+/* ABOUT US */
+.head {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.About-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.About-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.About-logo h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-left: 1rem;
+}
+.About-head {
+  text-align: center;
+  padding: 0 3.5rem;
+  margin-bottom: 6rem;
+}
+
+.About-head h3 {
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.About-head h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.About-head p {
+  margin-top: 1rem;
+  text-align: justify;
+  text-align-last: center;
+  font-size: 1.4rem;
+  color: var(--color-text-body);
+}
+
+.About-main {
+  margin: 0 1rem;
+  border-bottom: 1.5px solid #828282;
+  padding: 0 2rem;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.About-p p{
+  color: var(--color-text-body);
+  margin-bottom: 2rem;
+}
+
+.About-p .p-7{
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.About-team{
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.About-team h3{
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.About-team h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.About-team__profile{
+  margin-bottom: 6rem;
+}
+
+.About-profile {
+  margin-bottom: 2rem;
+}
+
+.About-profile img{
+  width: 90px;
+  height: 90px;
+}
+
+.About-profile h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+
+.About-profile h4{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--color-text);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.About-profile a{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--color-text-body);
+}
+
+.About-profile a:hover{
+  color: var(--color-primary);
+}
+
+.About-profile  img:last-child{
+  width: 10px;
+  height: 10px;
+}
+
+
