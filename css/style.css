@@ -1666,3 +1666,106 @@ p {
     font-size: 1.5rem;
   }
 }
+
+/* ---------------------------BLOG PAGE----------------------------------- */
+.blog-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 0 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.contents {
+  width: 150px;
+  height: 100px;
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.spans{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contents .icon-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.contents .icon-container .icon {
+  width: 15px;
+  height: 15px;
+  fill: white;
+}
+
+.contents span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--color-text-body);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contents p {
+  font-size: 0.8rem;
+}
+
+.contents .icon-container.twitter {
+  background-color: #1da1f2;
+}
+.contents .icon-container.youtube {
+  background-color: #ff0000;
+}
+.contents .icon-container.substack {
+  background-color: #ff6719;
+}
+.contents .icon-container.medium {
+  background-color: #000000;
+}
+.contents .icon-container.spotify {
+  background-color: #1db954;
+}
+.contents .icon-container.anchor {
+  background-color: #5000b9;
+}
+.contents .icon-container.instagram {
+  background-color: #e4405f;
+}
+.contents .icon-container.linkedin {
+  background-color: #0a66c2;
+}
+.contents .icon-container.wordpress {
+  background-color: #21759b;
+}
+.contents .icon-container.rss {
+  background-color: #ffa500;
+}
+.contents .icon-container.applepodcasts {
+  background-color: #9933cc;
+}
+.contents .icon-container.facebook {
+  background-color: #1877f2;
+}
+
+span.badge {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #102142;
+  color: #4A7DE3;
+  font-size: 0.6rem;
+}
