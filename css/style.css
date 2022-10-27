@@ -1173,6 +1173,7 @@ p {
 .Audience {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
   margin: 2rem 0 2rem 0;
 }
@@ -1189,29 +1190,31 @@ p {
 
 @media screen and (min-width: 1024px) {
   .Audience {
+    align-items: center;
     position: relative;
     text-align: center;
     margin: 8rem 0 8rem 0;
   }
   .Audience p {
-    width: 100%;
-    top: 28%;
+    width: 1000px;
+    top: 25%;
     right: 50%;
     transform: translateX(50%);
-    font-size: 5rem;
+    font-size: 6rem;
     padding: 0 2rem;
   }
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
   .Audience {
+    align-items: center;
     position: relative;
     text-align: center;
     margin: 6rem 0 6rem 0;
   }
   .Audience p {
-    width: 100%;
-    top: 25%;
+    width: 700px;
+    top: 22%;
     right: 50%;
     transform: translateX(50%);
     font-size: 4rem;
@@ -1221,12 +1224,13 @@ p {
 
 @media screen and (max-width: 800px) and (min-width: 600px) {
   .Audience {
+    align-items: center;
     position: relative;
     text-align: center;
     margin: 4rem 0 4rem 0;
   }
   .Audience p {
-    width: 100%;
+    width: 500px;
     top: 25%;
     right: 50%;
     transform: translateX(50%);
@@ -1901,4 +1905,118 @@ span.badge {
   .spans {
     margin-top: 0rem;
   }
+}
+
+/* ---------------------------Pricing PAGE----------------------------------- */
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-title {
+  width: 200px;
+  text-align: center;
+}
+
+.pricing-title h1 {
+  font-size: 2rem;
+}
+
+.pricing-plan {
+  margin: 2rem 2rem;
+}
+
+.plan {
+  width: 220px;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  background-color: var(--color-plan-bg);
+  border: 1px solid var(--color-plan-bg-stroke);
+}
+
+.plan:hover {
+  background-color: var(--color-plan-highlight);
+  border: 1px solid var(--color-plan-button-stroke);
+  color: var(--color-text-body);
+}
+
+.plan h1:first-child {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.free {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.plan p {
+  color: var(--color-text-body);
+  font-size: 1.2rem;
+}
+
+.plan h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.plan h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.plan ol {
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.plan li {
+  padding: 0 0 0 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-text-body);
+}
+.plan li::marker {
+  color: var(--color-text-body);
+  content: "✔";
+}
+
+.plan button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.3rem 0.5rem;
+}
+.plan button:hover {
+  background-color: #ffff;
+  color: var(--color-plan-highlight);
+}
+
+.plan h1 > sub {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-plan-text);
+  margin-left: 0.5rem;
+}
+
+.plan span {
+  color: var(--color-plan-text);
+  font-size: 1.2rem;
 }
