@@ -1748,6 +1748,10 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.contents span:nth-child(2){
+  cursor: pointer;
+}
+
 .contents p {
   font-size: 0.8rem;
 }
