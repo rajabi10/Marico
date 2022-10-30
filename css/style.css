@@ -2002,6 +2002,7 @@ span.badge {
   font-size: 1rem;
   color: var(--color-text-body);
 }
+
 .plan li::marker {
   color: var(--color-text-body);
   content: "✔";
@@ -2013,6 +2014,7 @@ span.badge {
   font-size: 1.5rem;
   padding: 1.3rem 0.5rem;
 }
+
 .plan button:hover {
   background-color: #ffff;
   color: var(--color-plan-highlight);
@@ -2029,4 +2031,160 @@ span.badge {
 .plan span {
   color: var(--color-plan-text);
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .pricing {
+    margin-bottom: 6rem;
+  }
+  .pricing-plan {
+    display: flex;
+    flex-direction: row;
+  }
+  .pricing-title {
+    width: 800px;
+    text-align: center;
+  }
+  .pricing-title h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  .plan {
+    width: 280px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 3rem;
+  }
+  .plan h1:first-child {
+    font-size: 3rem;
+  }
+  .free {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  .dollar {
+    font-size: 4rem;
+  }
+  .plan p {
+    color: var(--color-text-body);
+    font-size: 1.3rem;
+  }
+  .plan h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .plan h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .plan h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .plan li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .pricing {
+    margin-bottom: 4rem;
+  }
+  .pricing-plan {
+    display: flex;
+    justify-content: space-between;
+  }
+  .pricing-title {
+    width: 650px;
+    text-align: center;
+  }
+  .pricing-title h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3.2rem;
+  }
+  .plan {
+    width: 230px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0.8rem;
+  }
+  .plan h1:first-child {
+    font-size: 3rem;
+  }
+  .free {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  .dollar {
+    font-size: 4rem;
+  }
+  .plan p {
+    color: var(--color-text-body);
+    font-size: 1.3rem;
+  }
+  .plan h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .plan h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .plan h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .plan li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .pricing-title {
+    width: 400px;
+    text-align: center;
+  }
+  .pricing-title h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .plan h1:first-child {
+    font-size: 3rem;
+  }
+  .free {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+  .dollar {
+    font-size: 4rem;
+  }
+  .plan p {
+    color: var(--color-text-body);
+    font-size: 1.3rem;
+  }
+  .plan h3 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .plan h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .plan h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .plan li {
+    font-size: 1.2rem;
+  }
 }
