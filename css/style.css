@@ -2193,11 +2193,7 @@ span.badge {
   }
 }
 
-/* ---------------------------SignUp PAGE----------------------------------- */
-.signUp {
-  padding: 0 2rem;
-}
-
+/* ---------------------------SignUp and Login PAGE----------------------------------- */
 .sign-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -2219,10 +2215,9 @@ span.badge {
 .fields {
   display: flex;
   flex-direction: column;
-  /* padding: 75px 5px 5px 5px; */
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
+  margin: 4rem 0 0 0;
 }
 
 .fields input {
@@ -2330,3 +2325,203 @@ i.fa-apple {
   color: #fff;
   font-size: 2.5rem;
 }
+
+.login {
+  margin: 2rem 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.login a{
+  text-decoration: none;
+  color: var(--color-text-body);
+}
+
+.login a:hover{
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .signUp {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sign-title {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  .sign-title h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .sign-title h3 {
+    font-size: 2rem;
+  }
+  .fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+  .fields input {
+    padding: 20px 30px 20px 30px;
+  }
+  .svg-icon {
+    height: 24px;
+  }
+  .Sign__cta .btn--primary {
+    font-size: 1.7rem;
+  }
+  .Sign__cta .btn {
+    padding: 15px 120px 15px 120px;
+  }
+  .sign-another {
+    margin: 2rem 0 2rem 0;
+  }
+  .sign-another h1 {
+    font-size: 4rem;
+    margin-top: 0rem;
+  }
+  .sign-another h3 {
+    font-size: 2rem;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  .sing-with .icons .icon-container {
+    width: 65px;
+    height: 65px;
+  }
+  .sing-with a > span {
+    display: block;
+    color: var(--color-text-body);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  .sing-with a > span:hover {
+    color: var(--color-primary);
+  }
+  i.fa-google,
+  i.fa-facebook,
+  i.fa-apple {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .signUp {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .sign-title {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  .sign-title h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .sign-title h3 {
+    font-size: 2rem;
+  }
+  .fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 0;
+  }
+  .fields input {
+    padding: 20px 30px 20px 30px;
+  }
+  .svg-icon {
+    height: 24px;
+  }
+  .Sign__cta .btn--primary {
+    font-size: 1.7rem;
+  }
+  .Sign__cta .btn {
+    padding: 15px 120px 15px 120px;
+  }
+  .sign-another {
+    margin: 2rem 0 0 0;
+  }
+  .sign-another h1 {
+    font-size: 4rem;
+    margin-top: 0rem;
+  }
+  .sign-another h3 {
+    font-size: 2rem;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  .sing-with .icons .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+  .sing-with a > span {
+    display: block;
+    color: var(--color-text-body);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  .sing-with a > span:hover {
+    color: var(--color-primary);
+  }
+  i.fa-google,
+  i.fa-facebook,
+  i.fa-apple {
+    font-size: 3.5rem;
+  }
+  .login{
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+  .sign-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .sign-title h1 {
+    font-size: 4rem;
+  }
+  .fields {
+    margin: 1rem 0;
+  }
+  .sign-another {
+    margin: 1rem 0 1rem 0;
+  }
+  .sign-another h3 {
+    font-size: 2rem;
+  }
+  .sing-with {
+    margin-bottom: 2rem;
+  }
+  .sing-with .icons .icon-container {
+    width: 50px;
+    height: 50px;
+  }
+  i.fa-google,
+  i.fa-facebook,
+  i.fa-apple {
+    font-size: 3rem;
+  }
+  .login{
+    margin: 1rem 0;
+  }
+}
+
+/* ---------------------------login PAGE----------------------------------- */
