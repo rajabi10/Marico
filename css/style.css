@@ -1748,7 +1748,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.contents span:nth-child(2){
+.contents span:nth-child(2) {
   cursor: pointer;
 }
 
@@ -2191,4 +2191,142 @@ span.badge {
   .plan li {
     font-size: 1.2rem;
   }
+}
+
+/* ---------------------------SignUp PAGE----------------------------------- */
+.signUp {
+  padding: 0 2rem;
+}
+
+.sign-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sign-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sign-title h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  /* padding: 75px 5px 5px 5px; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.fields input {
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 20px 10px 20px 20px;
+}
+
+.fields ::placeholder {
+  color: var(--color-text-body);
+  opacity: 0.8;
+}
+
+.fields input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.username,
+.password,
+.Email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: -0.5px -0.5px 0.5px #cbced1 inset;
+}
+
+.svg-icon {
+  height: 22px;
+  margin: 0 20px -3px 20px;
+  fill: white;
+}
+
+.Sign__cta .btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-body);
+  font-size: 1.4rem;
+}
+
+.Sign__cta .btn {
+  padding: 15px 50px 15px 50px;
+}
+
+.Sign__cta a {
+  text-decoration: none;
+  color: var(--color-text-body);
+}
+
+.sign-another {
+  text-align: center;
+}
+
+.sign-another h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.sign-another h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.sing-with {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.sing-with a {
+  text-decoration: none;
+}
+
+.sing-with .icons .icon-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: var(--color-plan-bg);
+}
+
+.sing-with a > span {
+  display: none;
+}
+
+i.fa-google {
+  color: #4285f4;
+  font-size: 2.5rem;
+}
+
+i.fa-facebook {
+  color: #1877f2;
+  font-size: 2.5rem;
+}
+
+i.fa-apple {
+  color: #fff;
+  font-size: 2.5rem;
 }
